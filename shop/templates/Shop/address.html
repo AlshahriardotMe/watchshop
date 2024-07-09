@@ -1,0 +1,80 @@
+{% extends "Shop/base.html" %}
+{% load static %}
+<title>{% block title %}Address{% endblock title %}</title>
+{% block main-contact %}
+<div class="row  mx-1 mb-5 justify-content-center">
+   
+    <div class="col-md-10 justify-content-center">
+      <div class="card card-custom pb-4 jumbotron my-10">
+        <div class="card-body mt-0 mx-5">
+          <div class="text-center mb-3 pb-2 mt-3">
+             <h4 style="color: #495057 ;">Delivery Details</h4>
+          </div>
+  
+          <form class="mb-0">
+  
+            <div class="row mb-4">
+              <div class="col-md-12">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form9Example1" class="form-control input-custom" />
+                  <label class="form-label" for="form9Example1">First name</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form9Example2" class="form-control input-custom" />
+                  <label class="form-label" for="form9Example2">Last name</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-12">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form9Example3" class="form-control input-custom" />
+                  <label class="form-label" for="form9Example3">City</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="text" id="form9Example4" class="form-control input-custom" />
+                  <label class="form-label" for="form9Example4">Zip</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-12">
+                <div data-mdb-inputvvvvinit class="form-outline">
+                  <input type="text" id="form9Example6" class="form-control input-custom" />
+                  <label class="form-label" for="form9Example6">Address</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div data-mdb-input-init class="form-outline">
+                  <input type="email" id="typeEmail" class="form-control input-custom" />
+                  <label class="form-label" for="typeEmail">Email</label>
+                </div>
+              </div>
+            </div>
+  
+            <div class="float-end ">
+              <!-- Submit button -->
+              <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-accent btn-rounded"
+                >Place order</button>
+
+                <div class="text-center">
+                    <a type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-rounded back-button" href="{% url 'home' %}">Go back</a>
+                    
+                  </div>
+                </div>
+                  
+              
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock main-contact %}

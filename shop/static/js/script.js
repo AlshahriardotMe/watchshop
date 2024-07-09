@@ -115,3 +115,26 @@
     }); // End of a document ready
 
 })(jQuery);
+
+$(document).ready(function(){
+  $('.pass_show').append('<span class="ptxt">Show</span>');  
+  });
+    
+  
+  $(document).on('click','.pass_show .ptxt', function(){ 
+  
+  $(this).text($(this).text() == "Show" ? "Hide" : "Show"); 
+  
+  $(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+  
+  });  
+
+
+
+  function changeImage(element) {
+
+    var main_prodcut_image = document.getElementById('main_product_image');
+    main_prodcut_image.src = element.src;
+    
+
+}
