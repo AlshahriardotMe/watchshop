@@ -53,9 +53,14 @@
                         <span class="color green"></span>
                         <span class="color blue"></span>
                     </h5> -->
-                    <div class="action">
-                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-                        <button class="add-to-cart btn btn-accent" type="button">Buy now</button>
+                   
+                    <div class="action d-flex gap-4">
+                        <form action="" >
+                            <input type="hidden" name="prod_id" value="{{product.id}}" id="prod_id">
+                            <button class="add-to-cart btn btn-default" type="submit">Add to cart</button>
+                        </form>
+                        <a href="{% url 'Cart' %}" class="add-to-cart btn btn-accent">Buy now</a>
+                        
                         <!-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> -->
                     </div>
                 </div>

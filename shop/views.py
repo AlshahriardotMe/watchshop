@@ -26,9 +26,8 @@ class ProductViews(View):
 
 
 class productdetail(View):
-    def get(self, request, pk):
+    def get(self, request, pk ):
         product = Product.objects.get(pk=pk)
-
 
         data={
             'product':product

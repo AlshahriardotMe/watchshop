@@ -3,8 +3,8 @@
 <title>{% block title %}Cart{% endblock title %}</title>
 {% block main-contact %}
 
-<section class="h-100 h-custom" style="background-color: #d2c9ff;">
-    <div class="container py-5 h-100">
+<section class="h-100 h-custom" >
+    <div class="container-fluid py-10 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12">
           <div class="card card-registration my-6 card-registration-2" style="border-radius: 15px;">
@@ -28,25 +28,29 @@
                         <h6 class="text-muted">Shirt</h6>
                         <h6 class="mb-0">Cotton T-shirt</h6>
                       </div>
-                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                          <i class="fas fa-minus"></i>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex gap-3">
+                        <button  class="btn btn-link px-2 btn-accent">
+                          
+                          <img src="{% static 'images/Subtract.png' %}" alt="">
                         </button>
   
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
-                          class="form-control form-control-sm" />
+                        <input id="form1" min="0" name="quantity" value="1" 
+                          class="form-control text-center" />
   
-                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                        <button  class="btn btn-link px-2 btn-accent">
+                          
+                          <img src="{% static 'images/Plus Math.png' %}" alt="">
+                        </button>
+                        <!-- <button  class="btn btn-link px-2 btn-accent"
                           onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                          <i class="fas fa-plus"></i>
-                        </button>
+                          <img src="{% static 'images/Plus Math.png' %}" alt="">
+                        </button> -->
                       </div>
                       <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                         <h6 class="mb-0">€ 44.00</h6>
                       </div>
                       <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                        <a href="#" class="text-muted w-50 btn-outline-danger p-2 rounded-3"><img class="w-50 mb-2" src="{% static 'images/Delete.png' %}" alt=""></i></a>
                       </div>
                     </div>
   
@@ -163,8 +167,8 @@
                       <h5>€ 137.00</h5>
                     </div>
   
-                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-block btn-lg"
-                      data-mdb-ripple-color="dark">Checkout</button>
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning btn-block btn-lg"
+                      ><a class="text-dark" href="{% url 'Checkout' %}">Checkout</a> </button>
   
                   </div>
                 </div>

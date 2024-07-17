@@ -51,7 +51,7 @@
       </svg>
     </div>
   </section>
-  <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
+  <section id="mobile-products" class="product-store position-relative  no-padding-top">
     <div class="container">
       <div class="row">
         <div class="display-header d-flex justify-content-between pb-3">
@@ -68,7 +68,7 @@
                 
 
                 <div class="image-holder">
-                  <a href="{% url 'product_detail' %}"><img src="{{a.product_image.url}}" alt="product-item" class="img-fluid"></a>
+                  <a href="{% url 'product_detail' a.id %}"><img src="{{a.product_image.url}}" alt="product-item" class="img-fluid"></a>
                 </div>
                 <div class="cart-concern position-absolute">
                   <div class="cart-button d-flex">
@@ -93,7 +93,7 @@
     </div>
     <div class="swiper-pagination position-absolute text-center"></div>
   </section>
-  <section id="smart-watches" class="product-store padding-large position-relative">
+  <section id="smart-watches" class="product-store position-relative">
     <div class="container">
       <div class="row">
         <div class="display-header d-flex justify-content-between pb-3">
@@ -109,7 +109,7 @@
               <div class="product-card position-relative">
                 
                 <div class="image-holder">
-                  <a href="{% url 'product_detail' %}"><img src="{{s.product_image.url}}" alt="product-item" class="img-fluid"></a>
+                  <a href="{% url 'product_detail' s.id %}"><img src="{{s.product_image.url}}" alt="product-item" class="img-fluid"></a>
                 </div>
                 <div class="cart-concern position-absolute">
                   <div class="cart-button d-flex">
@@ -132,7 +132,7 @@
     </div>
     <div class="swiper-pagination position-absolute text-center"></div>
   </section>
-  <section id="smart-watches" class="product-store padding-large position-relative">
+  <section id="smart-watches" class="product-store  position-relative">
     <div class="container">
       <div class="row">
         <div class="display-header d-flex justify-content-between pb-3">
@@ -148,7 +148,7 @@
               <div class="product-card position-relative">
                 
                 <div class="image-holder">
-                  <a href="{% url 'product_detail' %}"><img src="{{w.product_image.url}}" alt="product-item" class="img-fluid"></a>
+                  <a href="{% url 'product_detail' w.id %}"><img src="{{w.product_image.url}}" alt="product-item" class="img-fluid"></a>
                   
                 </div>
                 <div class="cart-concern position-absolute">
@@ -172,7 +172,7 @@
     </div>
     <div class="swiper-pagination position-absolute text-center"></div>
   </section>
-  <section id="smart-watches" class="product-store padding-large position-relative">
+  <section id="smart-watches" class="product-store position-relative">
     <div class="container">
       <div class="row">
         <div class="display-header d-flex justify-content-between pb-3">
@@ -188,7 +188,7 @@
               <div class="product-card position-relative">
                 
                 <div class="image-holder">
-                  <a href="{% url 'product_detail' %}"><img src="{{t.product_image.url}}" alt="product-item" class="img-fluid"></a>
+                  <a href="{% url 'product_detail' t.id %}"><img src="{{t.product_image.url}}" alt="product-item" class="img-fluid"></a>
                 </div>
                 <div class="cart-concern position-absolute">
                   <div class="cart-button d-flex">
@@ -211,13 +211,13 @@
     </div>
     <div class="swiper-pagination position-absolute text-center"></div>
   </section>
-  <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+  <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image:  url('/static/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
     <div class="row d-flex flex-wrap align-items-center">
       <div class="col-md-6 col-sm-12">
         <div class="text-content offset-4 padding-medium">
           <h3>10% off</h3>
           <h2 class="display-2 pb-5 text-uppercase text-dark">New year sale</h2>
-          <a href="#" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Sale</a>
+          
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
@@ -226,7 +226,7 @@
     </div>
   </section>
   
-  <section id="instagram" class="padding-large overflow-hidden no-padding-top">
+  <section id="instagram" class="overflow-hidden no-padding-top">
     <div class="container">
       <div class="row">
         <div class="display-header text-uppercase text-dark text-center pb-3">
